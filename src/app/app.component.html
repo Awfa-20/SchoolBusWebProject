@@ -1,0 +1,21 @@
+<script>
+  function initMap(lat,lon) {
+      var uluru = {lat: lat, lng: lon};
+      var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 4,
+      center: uluru
+  });
+}
+</script>
+
+<ngx-spinner>
+  <h3>Loading...</h3>
+</ngx-spinner>
+
+<div  style="height: 100%;" *ngIf="IsLogin">
+  <app-home></app-home>
+</div>
+
+<div style="height: 100%;" *ngIf="!IsLogin">
+  <app-sign-in></app-sign-in>
+</div>

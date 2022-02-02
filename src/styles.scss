@@ -1,0 +1,117 @@
+
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use '@angular/material' as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$SchoolBusWebProject-primary: mat.define-palette(mat.$indigo-palette);
+$SchoolBusWebProject-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$SchoolBusWebProject-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$SchoolBusWebProject-theme: mat.define-light-theme((
+  color: (
+    primary: $SchoolBusWebProject-primary,
+    accent: $SchoolBusWebProject-accent,
+    warn: $SchoolBusWebProject-warn,
+  )
+));
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($SchoolBusWebProject-theme);
+
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+
+body {
+  // color: #3C4858;
+  // font-weight: 300;
+ }
+
+ .card .card-header{
+  background: linear-gradient(60deg, #ef5350, #e53935);
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: -20px;
+  border-radius: 3px;
+  padding: 15px;
+  border-bottom: none;
+  position: relative;
+  z-index: 3 !important;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  color: azure;
+
+  box-shadow: 0 4px 20px 0px rgb(0 0 0 / 14%), 0 7px 10px -5px rgb(244 67 54 / 40%);
+
+  .card-title{
+    font-size: 1.5rem;
+  }
+  .card-category{
+    font-size: 1.0rem;
+  }
+}
+
+.card {
+  margin-bottom: 30px;
+  margin-top: 30px;
+  border: 1px solid #eeeeee;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  background-clip: border-box;
+  color: #333333;
+  font-size: 0.875rem;
+  width: 100%;
+  min-width: 0;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  word-wrap: break-word;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 20%), 0 1px 5px 0 rgb(0 0 0 / 12%);
+}
+
+.container{
+  padding: 15px auto;
+  background-color: #eee;
+  height: 100%;
+  width: 100%;
+}
+
+
+
+
+.btn-bwm {
+  background-color: #F44336;
+  border-color: #F44336;
+  color: white;
+  padding: 15px 30px;
+  font-size: 20px;
+
+  &:hover, &:focus, &:active {
+    border-color: #F44336 ;
+    background-color: #F44336 ;
+  }
+}

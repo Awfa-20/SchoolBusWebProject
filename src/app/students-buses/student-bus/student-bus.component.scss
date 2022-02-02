@@ -1,0 +1,121 @@
+.container-fluid{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #fff;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  margin-top: calc(-1 * var(--bs-gutter-y));
+  margin-right: calc(-0.5 * var(--bs-gutter-x));
+  /* margin-left: calc(-0.5 * var(--bs-gutter-x)); */
+}
+
+.dropList{
+  width: 100%;
+}
+
+table {
+  width: 100%;
+}
+.data-table {
+  width: 100%;
+}
+
+.school_column,.busCompany_column{
+  height: 400px;
+  max-height: 600px;
+  overflow:hidden;
+  border-radius: 5px;
+}
+
+.student-list, .bus-list{
+  height:400px;
+  overflow:scroll;
+}
+
+// .mat-row:hover{
+//   background-color: gray;
+// }
+.mat-cell:focus-visible,
+.mat-cell:active{
+  // background-color: #f44336;
+  background: linear-gradient(60deg, #ef5350, #e53935);
+  box-shadow: 0 4px 20px 0px rgb(0 0 0 / 20%), 0 7px 10px -5px rgb(244 67 54 / 60%);
+  color:white;
+}
+
+
+
+.buttons{
+  margin:10px;
+  width: 100%;
+  .mat-raised-button{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+}
+
+
+.mat-header-cell {
+  font-size: 1rem !important;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: #9c27b0 !important;
+  // text-align: center;
+  vertical-align: middle;
+}
+
+.mat-cell {
+  vertical-align: middle;
+  font-size: 0.8rem !important;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+
+
+th.mat-header-cell:first-of-type, td.mat-cell:first-of-type, td.mat-footer-cell:first-of-type {
+  padding-left: 10px;
+}
+th.mat-header-cell:last-of-type, td.mat-cell:last-of-type, td.mat-footer-cell:last-of-type {
+  // width: 0px;
+  margin: 0px;
+  padding:0px ;
+
+}
+
+// .mat-sort-cell {
+//   font-size: 1.3rem !important;
+//   text-align: center;
+//   vertical-align: middle;
+
+//   .mat-cell {
+//     margin: 5px;
+//   }
+// }
+
+
+agm-map{
+  height: 70vh;
+}
+
+.agm-map-container-inner {
+   width: inherit; height: inherit;
+   border: 1px solid #000;
+  }
+  .agm-map-content {
+     display:none;
+
+    }
+
+
+
+
+
