@@ -19,8 +19,6 @@ export class AuthGuard implements CanActivate {
 
         this._snackBar.openSnackBar('You shall not pass!')
         return false;
-
-
       })
     )
   }
